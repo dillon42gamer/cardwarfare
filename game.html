@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Card Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="game">
+    <h1>Card Game</h1>
+    <div id="farmland">
+      <h2>Farmland</h2>
+      <div id="farmlandSlots"></div>
+    </div>
+    <div id="troops">
+      <h2>Troops</h2>
+      <div id="troopCards"></div>
+    </div>
+    <div id="counter">
+      <h2>Population</h2>
+      <div id="populationCount">0/0</div>
+    </div>
+    <div id="scoreboard">
+      <h2>Scoreboard</h2>
+      <div id="scores"></div>
+    </div>
+    <button onclick="drawCard()">Draw Card</button>
+    <div id="drawnCard" style="display:none;">
+      <p id="cardValue"></p>
+      <button onclick="placeFarmland()">Farmland</button>
+      <button onclick="placeTroop()">Troop</button>
+    </div>
+    <div id="gameState"></div>
+    <div id="warPhase" style="display:none;">
+      <h2>War Phase</h2>
+      <div id="chessboard"></div>
+      <button onclick="readyForWar()">Ready</button>
+    </div>
+  </div>
+  <script src="game.js"></script>
+</body>
+</html>

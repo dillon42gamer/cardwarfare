@@ -1,0 +1,82 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: green;
+  color: white;
+}
+
+#login, #game {
+  text-align: center;
+  margin-top: 50px;
+}
+
+input {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  margin-top: 10px;
+}
+
+#gameState, #farmland, #troops, #scoreboard, #counter {
+  margin-top: 20px;
+}
+
+#farmlandSlots, #troopCards {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.card {
+  border: 1px solid #000;
+  padding: 10px;
+  width: 50px;
+  text-align: center;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+}
+
+#scoreboard, #counter {
+  margin-top: 20px;
+  text-align: left;
+  padding: 10px;
+}
+
+#scores {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+#chessboard {
+  display: grid;
+  grid-template-columns: repeat(8, 50px);
+  grid-template-rows: repeat(8, 50px);
+  gap: 2px;
+  justify-content: center;
+  margin-top: 20px;
+  background: url('chessboard.png') no-repeat center center;
+  background-size: cover;
+}
+
+.square {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blue {
+  background-color: lightblue;
+}
+
+.red {
+  background-color: lightcoral;
+}
